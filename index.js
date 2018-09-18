@@ -13,6 +13,8 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json())
 
+app.use(express.static('build'))
+
 // part to handle logging
 app.use(morgan(':method :url :content :response-time'))
 
